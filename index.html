@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vrushabh Nalamwar | Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">
+          Vrushabh<span style="color: aqua;">Nalamwar</span>
+        </a>
+        <a style="height: 20px;" href="https://github.com/Vrushabh-111" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="subscribe" href="#contact">Subscribe</a>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="header">
+      <h1>Hello, I am <span style="color: aqua; font-family: Outfit;">Vrushabh Nalamwar</span></h1>
+    </div>
+
+    <!-- About Section -->
+    <div id="About" class="header about-section">
+      <h2>About <span>Me</span></h2>
+      <p>Software Developer | B.E. in Computer Science and Engineering</p>
+      <p>As a motivated and results-driven computer science student , I seek to leverage my technical skills and experience in developing scalable web applications and immersive user experiences. I am committed to contributing innovative solutions and optimizing performance in a collaborative, fast-paced environment while continuously enhancing my skill set to drive growth and success for the organization.</p>
+      <input
+        style="border-radius: 10px; padding: 12px 20px; border: 1px solid #ccc; font-size: 16px; width: 20%; max-width: 400px; background-color: #f9f9f9; color: #333; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); outline: none; transition: border-color 0.3s ease;"
+        placeholder="Enter Your Email"
+        type="email"
+      />
+      <button>Let's Start</button>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+      <h2>My <span>Project</span></h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>My Portfolio</h3>
+          <p>A personal portfolio website showcasing my skills, projects, and experiences as a Full-Stack Developer. It serves as a platform for potential employers and collaborators to view my work and contact me for opportunities.</p>
+          <p><strong>Technologies:</strong> HTML, CSS</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="skills">
+      <h2>Technical <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <p>MySQL</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-java"></i>
+          <p>Java</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact">
+      <h2>Contact <span>Me</span></h2>
+      <p>I'd love to hear from you! Feel free to reach out for collaborations or any queries.</p>
+      <div class="contact-form">
+        <div class="form-field">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-field">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-field">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button>Send Message</button>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <h3>Follow Me</h3>
+      <p>Connect with me on social media:</p>
+      <div class="social-icons">
+        <a href="https://github.com/Vrushabh-111" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2024 Vrushabh Nalamwar. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute("href"));
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 60,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
